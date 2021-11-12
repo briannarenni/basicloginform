@@ -4,14 +4,31 @@
         <meta charset="utf-8" />
         <meta http-equiv="x-ua-compatible" content="ie=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>#</title>
-        <link rel="stylesheet" href="#" />
-        <link rel="stylesheet" href="#" />
+        <title>Login Page</title>
+        <link rel="stylesheet" href="styles/css/normalize.css" />
+        <link rel="stylesheet" href="styles/css/main.css" />
         <link rel="icon" href="#" />
-        <script type="#" src="#" defer></script>
+        <script type="application/javascript" src="/scripts/main.js" defer></script>
     </head>
     <body>
+        <header>
+            <div>Don't have an account yet?</div>
+            <a href="register.html" class="register-link">Register</a>
+        </header>
+        <main>
+            <h1>Welcome back!</h1>
+            <!--ADD PHOTO-->
+            <section class="login-box">
+                <label for="login-username"></label>
+                <input type="text" id="login-username" placeholder="User Name" required>
     
+                <label for="login-password"></label>
+                <input type="password" id="login-password" placeholder="Password" required>
+    
+                <label for="login-submit"></label>
+                <input type="submit" id="login-submit" value="Login">
+            </section>
+        </main>
     
     </body>
 </html>
