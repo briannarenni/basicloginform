@@ -1,5 +1,5 @@
 $page-bkgd: url('/images/blue-bkgd.jpg');
-$box-bkgd: rgba(0, 0, 0, .50);
+$box-bkgd: rgba(0, 0, 0, .20);
 
 %flex {
   display: flex;
@@ -42,6 +42,7 @@ main {
   padding: 25px;
   width: 50%;
   background-color: $box-bkgd;
+  border-radius: 25px;
 
 
   .form-box {
