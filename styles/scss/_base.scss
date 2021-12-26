@@ -18,7 +18,6 @@ body {
   background-size: cover;
   padding: 20px;
   text-align: center;
-
 }
 
 a {
@@ -32,6 +31,7 @@ header {
 
   p, a {
     display: inline;
+    font-size: 22px;
   }
 }
 
@@ -48,7 +48,7 @@ main {
   .form-box {
     @extend %flex;
     text-align: center;
-    margin: 30px;
+    margin: 20px;
     padding: 15px 20px 15px 20px;
 
     input, {

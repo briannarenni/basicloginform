@@ -27,6 +27,7 @@ header {
 }
 header p, header a {
   display: inline;
+  font-size: 22px;
 }
 
 main {
@@ -39,7 +40,7 @@ main {
 }
 main .form-box {
   text-align: center;
-  margin: 30px;
+  margin: 20px;
   padding: 15px 20px 15px 20px;
 }
 main .form-box input {
