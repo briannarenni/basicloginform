@@ -1,15 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,700&display=swap');
+
+/*Variables*/
 $page-bkgd: url('/images/blue-bkgd.jpg');
 $box-bkgd: rgba(0, 0, 0, .20);
+$rubik-font: 'Rubik', sans-serif;
+$h1-font: 'Poppins', sans-serif;
 
+/*Placeholder classes*/
 %flex {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-content: center;
 }
+%hide-element {
+  border: 0;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
 
+/*Global Styles*/
 body {
   @extend %flex;
+  font-family: $rubik-font;
   color: white;
   max-width: 100vw;
   max-height: 100vh;
@@ -20,13 +40,18 @@ body {
   text-align: center;
 }
 
+h1 {
+  font-family: $h1-font, sans-serif;
+}
+
 a {
   text-decoration: none;
   color: inherit;
 }
 
 header {
-  padding: 5px;
+  padding-top: 3px;
+  padding-bottom: 5px;
   border-bottom: 1px solid white;
 
   p, a {
@@ -51,10 +76,16 @@ main {
     margin: 20px;
     padding: 15px 20px 15px 20px;
 
-    input, {
+    input {
       display: block;
       margin: 15px 75px 20px 75px;
       height: 50px;
+      padding-left: 10px;
     }
+
+    label {
+      @extend %hide-element;
+    }
+
   }
 }
