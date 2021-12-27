@@ -4,7 +4,7 @@
         <meta charset="utf-8" />
         <meta http-equiv="x-ua-compatible" content="ie=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>Login Page</title>
+        <title>Login</title>
         <link rel="stylesheet" href="styles/css/normalize.css" />
         <link rel="stylesheet" href="styles/css/main.css" />
         <link rel="icon" href="#" />
@@ -12,16 +12,13 @@
     </head>
     <body>
         <!--HEADER SECTION-->
-        <header>
-            <p>Don't have an account yet?</p>
-            <a href="register.html" class="signup-link">Register</a>
+        <header class="text-switch--header">
+            <p class="text-switch--p">Don't have an account yet?</p>
+            <a href="register.html" class="btn">Sign Up</a>
         </header>
         
-        <main>
-            <section class="login-header">
-                <h1>Welcome Back!</h1>
-                <!--ADD PHOTO-->
-            </section>
+        <main class="form-container">
+            <h1 class="form-greeting">Sign in</h1>
             <!--FORM BOX-->
             <form class="form-box">
                 <label for="login-email">Enter Email</label>
@@ -31,7 +28,7 @@
                 <input type="password" id="login-password" placeholder="Password" required>
                 
                 <label for="login-btn"></label>
-                <input type="submit" id="login-btn" value="Login">
+                <input class="btn input-btn" type="submit" id="login-btn" value="Login">
             </form>
         </main>
     
