@@ -36,7 +36,7 @@ body {
 }
 body p, body a {
   display: inline;
-  font-size: 24px;
+  font-size: 22px;
   text-decoration: none;
   color: inherit;
 }
@@ -62,7 +62,6 @@ main {
   color: #ffffff;
   font-size: 16px;
   letter-spacing: 1.5px;
-  background: #3498db;
   padding: 5px 15px 5px 15px;
   border: 1px solid #ffffff;
   text-decoration: none;
@@ -80,13 +79,14 @@ main {
 .btn {
   margin-left: 10px;
   text-transform: uppercase;
+  background: #433ec7;
 }
 
 .input-btn {
   font-family: "Rubik", sans-serif;
   border: 2px solid #ffffff;
-  font-size: 28px;
-  font-weight: bold;
+  font-size: 24px;
+  background: #2c86c5;
 }
 
 /*Class styling*/
@@ -94,12 +94,14 @@ main {
   padding-top: 3px;
   padding-bottom: 5px;
   border-bottom: 1px solid white;
-  height: 50px;
+  height: 40px;
 }
 
 .form-greeting {
   font-family: "Poppins", sans-serif, sans-serif;
   font-size: 2.5rem;
+  text-decoration: underline;
+  letter-spacing: 1.5px;
 }
 
 .form-box {
@@ -108,7 +110,7 @@ main {
 }
 .form-box input {
   display: block;
-  margin: 15px 75px 15px 75px;
+  margin: 10px 75px 15px 75px;
   height: 50px;
   padding-left: 10px;
 }
